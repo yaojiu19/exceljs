@@ -1,6 +1,6 @@
 {
-  "name": "exceljs",
-  "version": "4.4.0",
+  "name": "@yaojiu/exceljs",
+  "version": "4.4.1",
   "description": "Excel Workbook Manager - Read and Write xlsx and csv Files.",
   "private": false,
   "license": "MIT",
@@ -57,18 +57,6 @@
     "install-build": "npm install && grunt build",
     "preversion": "npm run clean && npm run build && npm run test:version",
     "postversion": "git push --no-verify && git push --tags --no-verify"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier-eslint --write",
-      "eslint --format node_modules/eslint-friendly-formatter",
-      "git add"
-    ]
   },
   "keywords": [
     "xlsx",

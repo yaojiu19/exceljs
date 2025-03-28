@@ -1723,6 +1723,7 @@ export class Workbook {
 	 * Workbook calculation Properties
 	 */
 	calcProperties: CalculationProperties;
+	language?: string;
 
 	/**
 	 * xlsx file format operations
@@ -1749,6 +1750,9 @@ export class Workbook {
 	 * return a clone of worksheets in order
 	 */
 	worksheets: Worksheet[];
+
+	constructor(options?: Partial<WorkbookModel>);
+
 
 	/**
 	 * Add a new worksheet and return a reference to it
