@@ -455,6 +455,11 @@ export interface Cell extends Style, Address {
 	dataValidation: DataValidation;
 
 	/**
+	 * originalValue of the cell
+	 */
+	originalValue: number | string | undefined;
+
+	/**
 	 * Value of the cell
 	 */
 	value: CellValue;
