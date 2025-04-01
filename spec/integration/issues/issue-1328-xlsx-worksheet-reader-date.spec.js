@@ -26,7 +26,9 @@ describe('github issues: Date field with cache style', () => {
   );
   it('issue 1328 - should emit row with Date Object', () => {
     expect(rows).that.deep.equals([
-      'Date',
+      {
+        sharedString: 0,
+      },
       new Date('2020-11-20T00:00:00.000Z'),
     ]);
   });

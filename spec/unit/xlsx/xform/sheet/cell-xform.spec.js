@@ -267,11 +267,13 @@ const expectations = [
     initialModel: {
       address: 'A1',
       type: Enums.ValueType.Date,
+      originalValue: 42530,
       value: new Date('2016-06-09T00:00:00.000Z'),
     },
     preparedModel: {
       address: 'A1',
       type: Enums.ValueType.Date,
+      originalValue: 42530,
       value: new Date('2016-06-09T00:00:00.000Z'),
       styleId: 1,
     },
@@ -285,6 +287,7 @@ const expectations = [
     reconciledModel: {
       address: 'A1',
       type: Enums.ValueType.Date,
+      originalValue: 42530,
       value: new Date('2016-06-09T00:00:00.000Z'),
       style: {numFmt: 'mm-dd-yy'},
     },
